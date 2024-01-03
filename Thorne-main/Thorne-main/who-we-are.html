@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>What We Stand For | About Us | Thorne</title>
+	<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="_csrf" content="23d4c4bc-f196-406a-b352-689229767b81" />
+<meta name="_csrf_header" content="X-CSRF-TOKEN" />
+<meta name="google-site-verification" content="PtHotEhJvvdruJy6NUVglaBMTcX9rbvclj0UBGkjlSc" />
+<meta name="p:domain_verify" content="0592946ca8c6aa678bbd6c3cb945e113" />
+
+
+
+<link rel="stylesheet" href="//d1vo8zfysxy97v.cloudfront.net/fonts/stylesheet-4ac5484f6907dfe5ec837298dfba854f.css" />
+<link rel="stylesheet" href="//d1vo8zfysxy97v.cloudfront.net/css/styles-83fe2d8625f00477c71122412574b1ca.css" />
+
+
+<content-blocks:styles></content-blocks:styles>
+
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	
+</script>
+
+<style>.async-hide { opacity: 0 !important} </style>
+<script>
+(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{"GTM-N3S9GG3":true});
+</script>
+
+<meta name="description" content="We are a health technology company that believes personalized, scientific wellness can extend one’s health span and create happier and healthier lives.  
+"/>
+</head>
+<body>
+
+<header id="site-navigation">
+	<a href="#content" id="skipNavigation" class="screenreader-only">Skip to Content</a>
+	
+	<hero-modal
+			v-if="showBanner() && banner.modal && banner.modal.show"
+			:background-color="banner.modal.background"
+			:icon="banner.modal.icon"
+			@close="banner.modal.show = false">
+		<h1 class="title is-1">{{ banner.modal.title }}</h1>
+		<p>{{ banner.modal.message }}</p>
+		<div>
+			<b-button type="is-black" @click="banner.modal.show = false">Close</b-button>
+		</div>
+	</hero-modal>
+	
+	<div id="global-banner" v-if="showBanner()" :class="banner.classes">
+	
+		<!-- 
+		<span v-if="banner.emoji" class="emoji" v-html="banner.emoji"></span>
+		<b-icon v-if="banner.icon" :pack="banner.icon.pack" :icon="banner.icon.name" :size="banner.icon.size"></b-icon>
+		<a v-if="banner.modal" @click="banner.modal.show = true"><span class="global-message" v-html="banner.message"></span></a>
+		<span v-else class="global-message" v-html="banner.message"></span>
+		<b-icon v-if="banner.icon && banner.icon.hasRight" :pack="banner.icon.pack" :icon="banner.icon.name" :size="banner.icon.size"></b-icon>
+		-->
+		
+		<div class="container">
+			<div class="columns">
+				<div class="column is-offset-1-desktop is-narrow flex-middle is-hidden-mobile logo"><svg width="165" height="13" fill="none" xmlns="http://www.w3.org/2000/svg" alt=" THT Logo">
+    <path d="M3.414 2.38H0V0h9.799v2.38H6.385v10.421H3.414V2.381zM10.854 0h2.718v4.797c.44-.417.963-.748 1.54-.975a4.987 4.987 0 0 1 1.817-.343c2.056 0 3.51 1.19 3.51 3.184v6.152h-2.715v-5.51c0-1.116-.738-1.63-1.707-1.63-.49.01-.968.135-1.394.362-.427.227-.787.55-1.05.938v5.84h-2.72V0zm10.64 8.24c0-2.73 2.195-4.76 5.28-4.76 3.086 0 5.295 2.03 5.295 4.76S29.878 13 26.774 13c-3.103 0-5.28-2.034-5.28-4.76zm7.86 0c0-1.594-1.104-2.545-2.58-2.545-1.475 0-2.544.951-2.544 2.544 0 1.594 1.07 2.545 2.562 2.545 1.493 0 2.562-.955 2.562-2.545zm3.784-4.58h2.719v1.1c.319-.391.726-.71 1.194-.931a3.643 3.643 0 0 1 1.503-.35c.317-.01.634.039.93.145l-.356 2.017-.135.128a2.953 2.953 0 0 0-.66-.091c-1.047 0-1.941.551-2.494 1.647v5.49h-2.7V3.66zm7.401 0h2.719v1.19c.405-.424.9-.766 1.451-1.002a4.608 4.608 0 0 1 1.756-.369c2.138 0 3.356 1.318 3.356 3.076v6.26h-2.718v-5.51c0-1.062-.542-1.63-1.572-1.63-.474.03-.932.173-1.332.415s-.728.576-.955.97v5.755h-2.72l.015-9.154zM50.89 8.24a4.423 4.423 0 0 1 .349-1.826 4.64 4.64 0 0 1 1.076-1.553 4.964 4.964 0 0 1 1.633-1.032 5.195 5.195 0 0 1 1.93-.35c2.873 0 4.872 1.758 4.872 4.707v.672h-7.301c.135 1.264 1.087 2.067 2.494 2.067.484.037.966-.082 1.368-.338.402-.256.7-.633.845-1.07l2.27.218.135.222c-.738 2.047-2.37 3.026-4.678 3.026-2.894.016-5.007-1.89-5.007-4.744h.014zm7.294-1.026c-.135-1.1-1.069-1.812-2.326-1.812a2.415 2.415 0 0 0-1.52.501 2.173 2.173 0 0 0-.81 1.311h4.656zM65.92 0h2.968v5.217h5.181V0h2.968v12.815H74.07V7.597h-5.166v5.218H65.92V0zm12.375 8.24a4.423 4.423 0 0 1 .349-1.826A4.64 4.64 0 0 1 79.72 4.86a4.963 4.963 0 0 1 1.633-1.032 5.195 5.195 0 0 1 1.93-.35c2.873 0 4.872 1.758 4.872 4.707v.672h-7.27c.136 1.264 1.07 2.067 2.495 2.067 1.244 0 1.885-.568 2.213-1.408l2.27.218.139.222c-.738 2.047-2.37 3.026-4.679 3.026-2.897.016-5.013-1.89-5.013-4.744h-.015zm7.298-1.026c-.136-1.1-1.07-1.812-2.327-1.812a2.416 2.416 0 0 0-1.519.501 2.173 2.173 0 0 0-.811 1.311h4.657zm3.845 3.002c0-1.68 1.318-2.71 3.413-2.911l2.623-.256v-.403c0-.844-.585-1.318-1.593-1.318a1.542 1.542 0 0 0-1.071.324 1.376 1.376 0 0 0-.522.94l-2.287-.185-.097-.11c.407-1.866 2-2.818 4.016-2.818 2.388 0 4.134 1.153 4.134 3.312v3.294c0 .588.27.86.712.86a.953.953 0 0 0 .357-.053l.1.107v1.742a4.34 4.34 0 0 1-1.34.184 2.325 2.325 0 0 1-1.295-.299 2.137 2.137 0 0 1-.879-.944h-.135c-.856.823-1.746 1.317-3.047 1.317-1.664 0-3.09-1.045-3.09-2.783zm6.036-.494V8.66l-2.138.255c-.909.111-1.397.551-1.397 1.153s.524.989 1.204.989c.959 0 1.64-.495 2.32-1.335h.01zM100.484 0h2.715v12.815h-2.715V0zm5.701 10.216v-4.43h-1.746V3.66h1.746V1.042h.356l2.348.77V3.66h2.056v2.124h-2.056v4.21c0 .604.389.917 1.048.917.264-.005.526-.048.777-.128l.135.07v1.96a7.186 7.186 0 0 1-1.707.185c-1.753 0-2.957-.843-2.957-2.783zM112.178 0h2.719v4.797c.44-.417.963-.749 1.539-.975a4.98 4.98 0 0 1 1.818-.343c2.056 0 3.509 1.19 3.509 3.184v6.152h-2.715v-5.51c0-1.116-.737-1.63-1.707-1.63a3.123 3.123 0 0 0-1.394.362 2.92 2.92 0 0 0-1.05.938v5.84h-2.719V0zm11.759 2.38h-3.414V0h9.799v2.38h-3.413v10.421h-2.972V2.381zm4.696 5.86a4.433 4.433 0 0 1 .349-1.826c.244-.58.61-1.108 1.076-1.553a4.961 4.961 0 0 1 1.633-1.032 5.194 5.194 0 0 1 1.931-.35c2.872 0 4.867 1.758 4.867 4.707v.672h-7.301c.136 1.264 1.087 2.067 2.495 2.067 1.243 0 1.881-.568 2.212-1.408l2.27.218.136.222c-.738 2.047-2.366 3.026-4.675 3.026-2.883.016-4.993-1.89-4.993-4.744zm7.298-1.026c-.135-1.1-1.069-1.812-2.33-1.812a2.414 2.414 0 0 0-1.518.501 2.168 2.168 0 0 0-.809 1.311h4.657zm3.784 1.025c0-2.82 2.249-4.76 5.081-4.76 2.584 0 4.33 1.345 4.757 3.406l-.157.181-2.251.219c-.25-.931-1.027-1.59-2.349-1.59-1.322 0-2.444.877-2.444 2.544 0 1.668 1.069 2.545 2.444 2.545 1.376 0 1.999-.605 2.349-1.593l2.251.218.157.165c-.584 2.199-2.27 3.425-4.757 3.425-2.84 0-5.088-1.943-5.088-4.76h.007zM150.768 0h2.719v4.797c.44-.417.963-.749 1.539-.975a4.98 4.98 0 0 1 1.818-.343c2.056 0 3.509 1.19 3.509 3.184v6.152h-2.715v-5.51c0-1.116-.737-1.63-1.707-1.63a3.122 3.122 0 0 0-1.394.362 2.92 2.92 0 0 0-1.05.938v5.84h-2.719V0zm10.897 3.543h2.437a.94.94 0 0 0 .637-.25.816.816 0 0 0 .261-.603V.392a.376.376 0 0 0-.071-.218.415.415 0 0 0-.188-.144.44.44 0 0 0-.454.087l-2.918 2.753a.372.372 0 0 0-.091.43.394.394 0 0 0 .154.176c.069.044.15.067.233.066z" fill="#fff"/>
+</svg></div>
+				<div class="column ticker-info is-hidden-touch">
+					<div class="columns is-mobile">
+						<div class="column flex-middle-right"><span class="ticker">THRN</span></div>
+						<div class="column is-narrow flex-middle-center slash"><img src="//d1vo8zfysxy97v.cloudfront.net/images/layout/announcements/slash-82a3963fe9cecc96fe6e194a70825370.png" alt="Slash"/></div>
+						<div class="column flex-middle"><div><span class="nasdaq">Nasdaq</span> <span class="listed">Listed</span></div></div>
+					</div>
+				</div>
+				<div class="column flex-middle investing">
+					<div>We're investing in a healthier future. <a href="/take-5-daily/article/ipo-announcement-whats-next-for-thorne-healthtech">Learn more</a></div>
+				</div>
+			</div>
+		</div>
+		 
+	</div>
+
+	
+	<div class="legacy-browser-notice" aria-hidden="true">
+		<b-icon pack="far" icon="exclamation-circle"></b-icon>
+		<strong>You're using a browser we no longer support.</strong> Improve your experience by using Chrome, Edge, Safari or Firefox.
+	</div>
+
+	
+	<div class="desktop-navigation container is-hidden-touch is-hidden-print">
+		<nav class="level">
+  <div class="level-left">
+    <div class="level-item">
+      <a href="/" aria-label="Thorne"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="146" height="22" viewbox="0 0 146 22" class=" thorne-logo" alt=" Thorne Logo">
+    <path fill="#000" fill-rule="evenodd" d="M23.412 1.191a.595.595 0 0 1 .578-.573h3.613a.573.573 0 0 1 .574.573v7.586h8.682V1.191a.575.575 0 0 1 .577-.573h3.613c.314.009.567.26.578.573v19.927a.595.595 0 0 1-.578.573h-3.613a.575.575 0 0 1-.577-.573v-7.915h-8.682v7.916a.573.573 0 0 1-.574.573H23.99a.595.595 0 0 1-.578-.573V1.191zM58.489.318a10.838 10.838 0 0 0-10.902 10.869c0 6.024 4.827 10.805 10.898 10.805 6.07 0 10.929-4.788 10.929-10.805A10.866 10.866 0 0 0 58.484.317l.005.001zm-.004 16.858c-3.31 0-6.042-2.711-6.042-5.99a6.057 6.057 0 0 1 12.112 0c0 3.279-2.73 5.99-6.07 5.99zm16.899 3.943a.573.573 0 0 0 .578.573h3.613a.595.595 0 0 0 .577-.573v-7.677h2.094l4.036 7.979a.56.56 0 0 0 .487.27h4.036a.568.568 0 0 0 .517-.871l-4.158-7.648c2.64-1.052 4.492-3.281 4.492-6.05 0-3.585-2.975-6.504-6.616-6.504h-9.078a.573.573 0 0 0-.578.573v19.928zM80.15 9.621V4.926h4.492a2.317 2.317 0 0 1 2.308 2.285c0 1.266-1.061 2.41-2.308 2.41h-4.492zm19.04 11.498a.595.595 0 0 0 .578.573h3.61a.573.573 0 0 0 .578-.573V9.891h.03l11.99 11.954a.88.88 0 0 0 .393.155h.487a.568.568 0 0 0 .577-.542V1.19a.595.595 0 0 0-.577-.573h-3.641a.575.575 0 0 0-.578.573v10.686h-.031L100.733.544a.814.814 0 0 0-.563-.226h-.434a.568.568 0 0 0-.577.542l.032 20.26zm25.75 0a.573.573 0 0 0 .577.572h12.568a.575.575 0 0 0 .577-.573v-3.28a.575.575 0 0 0-.577-.573h-8.408v-4.062h6.922a.578.578 0 0 0 .577-.573V9.35a.596.596 0 0 0-.577-.573h-6.922V5.045h8.41a.575.575 0 0 0 .577-.573V1.191a.575.575 0 0 0-.578-.573h-12.57a.573.573 0 0 0-.577.573v19.928zM16.87.618H.578A.575.575 0 0 0 0 1.19v3.281a.575.575 0 0 0 .578.573h5.746v16.337a.34.34 0 0 0 .348.309h.369c.154 0 .463-.17.683-.375.219-.206.32-.31.32-.31l.018-.016 2.555-2.543c.322-.322.504-.76.503-1.216V5.045h5.747a.575.575 0 0 0 .578-.573V1.191a.575.575 0 0 0-.578-.573h.003zM143.006 0a2.827 2.827 0 1 1-2.824 2.831A2.84 2.84 0 0 1 143.009 0h-.003zm0 5.042a2.21 2.21 0 1 0-1.563-.645c.415.414.979.647 1.566.645h-.003zm-1.054-3.508c0-.085.07-.155.155-.155h1.218a.953.953 0 0 1 .967.975.913.913 0 0 1-.559.873l.362.819a.145.145 0 0 1-.135.211h-.425a.171.171 0 0 1-.142-.11l-.346-.88h-.409v.842c0 .085-.07.154-.155.154h-.384a.154.154 0 0 1-.155-.154l.008-2.575zm1.282 1.155a.309.309 0 0 0 .323-.322.309.309 0 0 0-.323-.323h-.618v.647l.618-.002z"/>
+</svg></a>
+      
+    </div>
+    <div class="level-item">
+      <a href="/get-started">Get Started</a>
+    </div>
+    <div class="level-item">
+      <a href="/products">Shop</a>
+    </div>
+	<div class="level-item">
+	  <a href="/at-home-tests" aria-label="Shop Tests">Tests</a>
+	</div>
+    <div class="level-item">
+      <a href="/take-5-daily">Take 5 Daily</a>
+    </div>
+    <div class="level-item">
+      <a href="/faqs">Help</a>
+    </div>
+  </div>
+
+  <div class="level-right">
+    <div class="level-item">
+      <search-box></search-box>
+    </div>
+    <div class="level-item">
+      <a href="/activate" class="button">Activate Test</a>
+    </div>
+    <div class="level-item">
+      <a
+        href="/login"
+        class="button"
+        >Sign In</a
+      >
+
+      
+    </div>
+    <div class="level-item cart-button">
+      <a href="/cart" :aria-label="`Go to cart page containing ${cartQuantity} items`"><i class="far fa-shopping-cart"></i><b-tag v-if="cartQuantity > 0">{{ cartQuantity }}</b-tag></a>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	
+	<div class="mobile-navigation is-hidden-desktop is-block-touch is-hidden-print">
+		<div class="mobile-nav-container" :class="{'is-open': mobileMenuOpen}">
+	<div class="container">
+		<div class="columns is-mobile is-gapless top-navigation">
+			<div class="column">
+				<div class="menu-icon flex-middle">
+					<i class="fal" :class="mobileMenuIcon" @keyup.enter="toggleMobileMenu" @click.prevent="toggleMobileMenu" tabindex="0" role="button"></i>
+				</div>
+			</div>
+			<div class="column flex-middle-center">
+				<a href="/" aria-label="Home Page"><svg xmlns="http://www.w3.org/2000/svg" width="146" height="22" viewbox="0 0 146 22" class=" thorne-logo" alt=" Thorne Logo">
+    <path fill="#000" fill-rule="evenodd" d="M23.412 1.191a.595.595 0 0 1 .578-.573h3.613a.573.573 0 0 1 .574.573v7.586h8.682V1.191a.575.575 0 0 1 .577-.573h3.613c.314.009.567.26.578.573v19.927a.595.595 0 0 1-.578.573h-3.613a.575.575 0 0 1-.577-.573v-7.915h-8.682v7.916a.573.573 0 0 1-.574.573H23.99a.595.595 0 0 1-.578-.573V1.191zM58.489.318a10.838 10.838 0 0 0-10.902 10.869c0 6.024 4.827 10.805 10.898 10.805 6.07 0 10.929-4.788 10.929-10.805A10.866 10.866 0 0 0 58.484.317l.005.001zm-.004 16.858c-3.31 0-6.042-2.711-6.042-5.99a6.057 6.057 0 0 1 12.112 0c0 3.279-2.73 5.99-6.07 5.99zm16.899 3.943a.573.573 0 0 0 .578.573h3.613a.595.595 0 0 0 .577-.573v-7.677h2.094l4.036 7.979a.56.56 0 0 0 .487.27h4.036a.568.568 0 0 0 .517-.871l-4.158-7.648c2.64-1.052 4.492-3.281 4.492-6.05 0-3.585-2.975-6.504-6.616-6.504h-9.078a.573.573 0 0 0-.578.573v19.928zM80.15 9.621V4.926h4.492a2.317 2.317 0 0 1 2.308 2.285c0 1.266-1.061 2.41-2.308 2.41h-4.492zm19.04 11.498a.595.595 0 0 0 .578.573h3.61a.573.573 0 0 0 .578-.573V9.891h.03l11.99 11.954a.88.88 0 0 0 .393.155h.487a.568.568 0 0 0 .577-.542V1.19a.595.595 0 0 0-.577-.573h-3.641a.575.575 0 0 0-.578.573v10.686h-.031L100.733.544a.814.814 0 0 0-.563-.226h-.434a.568.568 0 0 0-.577.542l.032 20.26zm25.75 0a.573.573 0 0 0 .577.572h12.568a.575.575 0 0 0 .577-.573v-3.28a.575.575 0 0 0-.577-.573h-8.408v-4.062h6.922a.578.578 0 0 0 .577-.573V9.35a.596.596 0 0 0-.577-.573h-6.922V5.045h8.41a.575.575 0 0 0 .577-.573V1.191a.575.575 0 0 0-.578-.573h-12.57a.573.573 0 0 0-.577.573v19.928zM16.87.618H.578A.575.575 0 0 0 0 1.19v3.281a.575.575 0 0 0 .578.573h5.746v16.337a.34.34 0 0 0 .348.309h.369c.154 0 .463-.17.683-.375.219-.206.32-.31.32-.31l.018-.016 2.555-2.543c.322-.322.504-.76.503-1.216V5.045h5.747a.575.575 0 0 0 .578-.573V1.191a.575.575 0 0 0-.578-.573h.003zM143.006 0a2.827 2.827 0 1 1-2.824 2.831A2.84 2.84 0 0 1 143.009 0h-.003zm0 5.042a2.21 2.21 0 1 0-1.563-.645c.415.414.979.647 1.566.645h-.003zm-1.054-3.508c0-.085.07-.155.155-.155h1.218a.953.953 0 0 1 .967.975.913.913 0 0 1-.559.873l.362.819a.145.145 0 0 1-.135.211h-.425a.171.171 0 0 1-.142-.11l-.346-.88h-.409v.842c0 .085-.07.154-.155.154h-.384a.154.154 0 0 1-.155-.154l.008-2.575zm1.282 1.155a.309.309 0 0 0 .323-.322.309.309 0 0 0-.323-.323h-.618v.647l.618-.002z"/>
+</svg></a>
+			</div>
+			<div class="column flex-middle-right cart-button">
+				<a href="/cart" aria-label="Cart Link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewbox="0 0 24 22" class=" cart-icon" alt=" Cart">
+    <g fill="#000" fill-rule="nonzero">
+        <path d="M23.9 3.2c-.1-.1-.2-.2-.4-.2h-19L4 .4c0-.2-.3-.4-.5-.4h-3C.2 0 0 .2 0 .5s.2.5.5.5h2.6l2.4 12.2c.3 1.6 1.8 2.8 3.4 2.8h11.5c.3 0 .5-.2.5-.5s-.2-.5-.5-.5H9c-.8 0-1.6-.4-2-1.1l14.6-2c.2 0 .4-.2.4-.4l2-8s0-.2-.1-.3zM21.1 11L6.5 12.9l-1.8-9h18.1L21.1 11zM8.5 17C7.1 17 6 18.1 6 19.5S7.1 22 8.5 22s2.5-1.1 2.5-2.5S9.9 17 8.5 17zm0 4c-.8 0-1.5-.7-1.5-1.5S7.7 18 8.5 18s1.5.7 1.5 1.5S9.3 21 8.5 21zM18.5 17c-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5-1.1-2.5-2.5-2.5zm0 4c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/>
+    </g>
+</svg></a>
+				<a href="/cart" aria-label="Cart Link"><b-tag v-if="cartQuantity > 0">{{ cartQuantity }}</b-tag></a>
+			</div>
+		</div>
+	</div>
+	
+	<hr/>
+	
+	<div class="container">
+		<ul>
+			<li class="cart-summary">
+				<a href="/checkout" class="button is-primary checkout-button">Checkout</a>
+			</li>
+			<li>
+				<form action="/search" method="get" autocomplete="off">
+					<div class="control has-icons-left search-box">
+						<input class="input is-large" type="text" name="q" placeholder="Search"/>
+						<span class="icon is-small is-left">
+							<i class="fas fa-search"></i>
+						</span>
+					</div>
+				</form>
+			</li>
+		</ul>
+		<ul>
+			<li><a href="/products">Shop</a></li>
+			<li><a href="/get-started">Get Started</a></li>
+			<li><a href="/take-5-daily">Take 5 Daily</a></li>
+			<li><a href="/quizzes">Quizzes</a></li>
+			<li><a href="/activate" class="is-primary">Activate Test</a></li>
+			<li><a href="/faqs">Help</a></li>
+			<li><a href="/login">Sign In</a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+
+	
+	<div class="is-print-only flex-middle-center">
+		<svg xmlns="http://www.w3.org/2000/svg" width="146" height="22" viewbox="0 0 146 22" class=" thorne-logo" alt=" Thorne">
+    <path fill="#000" fill-rule="evenodd" d="M23.412 1.191a.595.595 0 0 1 .578-.573h3.613a.573.573 0 0 1 .574.573v7.586h8.682V1.191a.575.575 0 0 1 .577-.573h3.613c.314.009.567.26.578.573v19.927a.595.595 0 0 1-.578.573h-3.613a.575.575 0 0 1-.577-.573v-7.915h-8.682v7.916a.573.573 0 0 1-.574.573H23.99a.595.595 0 0 1-.578-.573V1.191zM58.489.318a10.838 10.838 0 0 0-10.902 10.869c0 6.024 4.827 10.805 10.898 10.805 6.07 0 10.929-4.788 10.929-10.805A10.866 10.866 0 0 0 58.484.317l.005.001zm-.004 16.858c-3.31 0-6.042-2.711-6.042-5.99a6.057 6.057 0 0 1 12.112 0c0 3.279-2.73 5.99-6.07 5.99zm16.899 3.943a.573.573 0 0 0 .578.573h3.613a.595.595 0 0 0 .577-.573v-7.677h2.094l4.036 7.979a.56.56 0 0 0 .487.27h4.036a.568.568 0 0 0 .517-.871l-4.158-7.648c2.64-1.052 4.492-3.281 4.492-6.05 0-3.585-2.975-6.504-6.616-6.504h-9.078a.573.573 0 0 0-.578.573v19.928zM80.15 9.621V4.926h4.492a2.317 2.317 0 0 1 2.308 2.285c0 1.266-1.061 2.41-2.308 2.41h-4.492zm19.04 11.498a.595.595 0 0 0 .578.573h3.61a.573.573 0 0 0 .578-.573V9.891h.03l11.99 11.954a.88.88 0 0 0 .393.155h.487a.568.568 0 0 0 .577-.542V1.19a.595.595 0 0 0-.577-.573h-3.641a.575.575 0 0 0-.578.573v10.686h-.031L100.733.544a.814.814 0 0 0-.563-.226h-.434a.568.568 0 0 0-.577.542l.032 20.26zm25.75 0a.573.573 0 0 0 .577.572h12.568a.575.575 0 0 0 .577-.573v-3.28a.575.575 0 0 0-.577-.573h-8.408v-4.062h6.922a.578.578 0 0 0 .577-.573V9.35a.596.596 0 0 0-.577-.573h-6.922V5.045h8.41a.575.575 0 0 0 .577-.573V1.191a.575.575 0 0 0-.578-.573h-12.57a.573.573 0 0 0-.577.573v19.928zM16.87.618H.578A.575.575 0 0 0 0 1.19v3.281a.575.575 0 0 0 .578.573h5.746v16.337a.34.34 0 0 0 .348.309h.369c.154 0 .463-.17.683-.375.219-.206.32-.31.32-.31l.018-.016 2.555-2.543c.322-.322.504-.76.503-1.216V5.045h5.747a.575.575 0 0 0 .578-.573V1.191a.575.575 0 0 0-.578-.573h.003zM143.006 0a2.827 2.827 0 1 1-2.824 2.831A2.84 2.84 0 0 1 143.009 0h-.003zm0 5.042a2.21 2.21 0 1 0-1.563-.645c.415.414.979.647 1.566.645h-.003zm-1.054-3.508c0-.085.07-.155.155-.155h1.218a.953.953 0 0 1 .967.975.913.913 0 0 1-.559.873l.362.819a.145.145 0 0 1-.135.211h-.425a.171.171 0 0 1-.142-.11l-.346-.88h-.409v.842c0 .085-.07.154-.155.154h-.384a.154.154 0 0 1-.155-.154l.008-2.575zm1.282 1.155a.309.309 0 0 0 .323-.322.309.309 0 0 0-.323-.323h-.618v.647l.618-.002z"/>
+</svg>
+	</div>
+
+	
+</header>
+
+<a name="content"></a>
+<main id="pages-content-general-content">
+			<style> .flex-middle {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+
+.flex-middle-center {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.flex-middle-right {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.flex-column-middle {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.flex-column-middle-center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.flex-column-middle-right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+#pages-marketing-who-we-are-content {
+  padding-bottom: 5rem;
+  background-color: #ffffff; }
+  #pages-marketing-who-we-are-content .hero {
+    background-color: #03180F; }
+    #pages-marketing-who-we-are-content .hero .container {
+      background-image: url("https://d1vo8zfysxy97v.cloudfront.net/media/pages/who-we-are/header_v9644fad6458471fa86e0a7a9ebbb9d63ba5abadf.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      padding-top: 10rem;
+      padding-bottom: 9.28571429rem;
+      width: 100%; }
+      #pages-marketing-who-we-are-content .hero .container .title {
+        color: #ffffff; }
+        #pages-marketing-who-we-are-content .hero .container .title.is-1 {
+          font-size: 64px;
+          line-height: 84px; }
+        #pages-marketing-who-we-are-content .hero .container .title.is-2 {
+          font-size: 18px;
+          line-height: 24px; }
+  #pages-marketing-who-we-are-content .column-heading h1 {
+    margin: 6rem 0 1.5rem 0;
+    color: #191919;
+    font-size: 1.28571429rem; }
+  #pages-marketing-who-we-are-content .mission {
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #ebebeb; }
+    #pages-marketing-who-we-are-content .mission .columns {
+      padding: 6rem 0 6rem 0; }
+      #pages-marketing-who-we-are-content .mission .columns .column {
+        font-size: 1.14285714rem;
+        line-height: 1.85714286rem; }
+        #pages-marketing-who-we-are-content .mission .columns .column p {
+          margin-bottom: 1.85714286rem; }
+          #pages-marketing-who-we-are-content .mission .columns .column p:last-child {
+            margin-bottom: 0; }
+        #pages-marketing-who-we-are-content .mission .columns .column:first-child h1 {
+          font-size: 1.71428571rem;
+          margin-bottom: 1.42857143rem;
+          font-weight: bold; }
+        #pages-marketing-who-we-are-content .mission .columns .column:first-child p {
+          color: #191919;
+          font-size: 1.28571429rem;
+          line-height: 1.78571429rem;
+          font-weight: 500;
+          max-width: 28.57142857rem; }
+  #pages-marketing-who-we-are-content .promise .columns {
+    margin: 3rem 0 3rem 0; }
+    #pages-marketing-who-we-are-content .promise .columns .titles {
+      padding-top: 1rem; }
+      #pages-marketing-who-we-are-content .promise .columns .titles p {
+        color: #888888; }
+  #pages-marketing-who-we-are-content .VueCarousel .image-tile {
+    margin-right: 1.57142857rem; }
+  #pages-marketing-who-we-are-content .VueCarousel .VueCarousel-navigation--disabled {
+    display: none; }
+  #pages-marketing-who-we-are-content .VueCarousel .VueCarousel-navigation-button {
+    width: 2.85714286rem;
+    height: 2.85714286rem;
+    margin-top: -2.14285714rem; }
+    #pages-marketing-who-we-are-content .VueCarousel .VueCarousel-navigation-button i {
+      color: #191919 !important;
+      font-size: 1.14285714rem; }
+  #pages-marketing-who-we-are-content .VueCarousel .VueCarousel-navigation-prev {
+    transform: translateY(-50%) translateX(-50%); }
+  #pages-marketing-who-we-are-content .VueCarousel .VueCarousel-navigation-next {
+    transform: translateY(-50%) translateX(0%); }
+ </style>
+<div id="pages-marketing-who-we-are-content">
+		<section class="hero">
+			<div class="container">
+				<h1 class="title is-1">Who we are</h1>
+				<h2 class="title is-2">We are experts in the field of human health. </h2>
+			</div>
+		</section>
+
+		<!-- Row 1 -->
+		<section class="mission">
+			<div class="container">
+				<div class="columns is-marginless">
+					<div class="column">
+						<h1>Our Mission</h1>
+						<p>We believe personalized, scientific wellness can extend the duration of one's health span and create happier and healthier lives.</p>
+					</div>
+					<div class="column">
+						<p>Our ambition is to empower our customers to improve and extend their health span through testing, teaching, and transforming health, so they can prevent adverse chronic health conditions before they begin.</p>
+						<p>As people seek new ways to optimize health and fuel their personal resiliency, Thorne is here to help them achieve their goals.</p>
+						<p>From health tests powered by the proprietary, multi-omic Onegvity Health Intelligence platform, to advanced nutritional formulas, Thorne can redefine what it means to live healthy.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container is-medium promise">
+
+			<!-- Row 2 -->
+			<div class="column-heading">
+				<h1>Our Promise &ndash; Bring your health to new heights.</h1>
+			</div>
+			<div class="columns is-marginless">
+				<div class="column">
+					<image-card
+							title="Onegevity Health Intelligence"
+							subtitle="Where new ventures to push the limits of human potential  are born."
+							background="/media/pages/who-we-are/health-intelligence_va09febae9227cc240c60e420bba1cf4adc8f35b1.jpg"
+							badge-color="#e45dbf"
+							badge-name="New"
+							href="/onegevity-health-intelligence">
+					</image-card>
+				</div>
+				<div class="column">
+					<image-card
+							title="Our Facility"
+							subtitle="Where the world's most trusted supplements and health solutions are made."
+							background="/media/pages/who-we-are/our-facility_vbee33f6e7a072bf53296209d956d6199451966fe.jpg"
+							badge-name="Explore"
+							badge-color="#191919"
+							href="/quality">
+					</image-card>
+				</div>
+			</div>
+			<div class="column-heading">
+				<h1>A truly integrated approach to health.</h1>
+			</div>
+			<div class="columns is-marginless">
+				<!-- Row 3 -->
+				<div class="column">
+
+					<!-- Start Carousel -->
+					<div class="carousel">
+						<carousel :navigation-enabled="true" navigation-next-label="<i class='fas fa-arrow-right'></i>" navigation-prev-label="<i class='fas fa-arrow-left'></i>" :per-page-custom="[[600, 2], [769,3], [1024, 4]]"
+								  :pagination-enabled="false" :scroll-per-page="false">
+							<slide v-for="item of approach">
+								<image-card
+										:title="item.title"
+										:subtitle="item.subtitle"
+										:background="item.image"
+										:small-tile="true"
+										:href="item.href">
+								</image-card>
+							</slide>
+						</carousel>
+					</div>
+					<!-- End Carousel -->
+				</div>
+			</div>
+		</section>
+	</div>
+		</main>
+
+
+
+<footer id="site-footer">
+	<div class="container">
+		<div class="columns is-hidden-print is-multiline is-mobile">
+			<div class="column is-full-mobile">
+				<div class="secondary-mark">
+					<img src="//d1vo8zfysxy97v.cloudfront.net/images/layout/t-8b4795b54b016da8c57fc3f13fad8a71.svg" alt="Thorne Icon"/>
+				</div>
+
+				<div @keyup.enter.stop="toggleDropdown"
+					 @keyup.up.stop="previousCountry"
+					 @keyup.down.stop="nextCountry">
+					<b-dropdown v-model="locale" ref="countrySelect" class="selected-country" :trap-focus="false">
+						<template>
+							<div class="flex-middle" slot="trigger" :aria-label="`Click to change locale from ${selectedCountry.name}`">
+								<img :src="getFlagPath(selectedCountry.isoCode)" :alt="`Flag of ${selectedCountry.name}`"/>
+								<span class="selected"><strong>{{ selectedCountry.name }}</strong></span>
+								<i class="far fa-angle-down"></i>
+							</div>
+						</template>
+						<div role="menu">
+							<b-dropdown-item :key="country.locale" v-for="country in sortedCountries"
+											 class="flex-middle country-option"
+											 aria-role="listitem"
+											 :value="country.locale"
+											 role="menuitem"
+											 :aria-label="`Switch locale to ${country.name}`">
+								<img :src="getFlagPath(country.isoCode)" :alt="`Flag of ${country.name}`"/> {{ country.name }}
+							</b-dropdown-item>
+						</div>
+					</b-dropdown>
+				</div>
+			</div>
+			<div class="column is-half-mobile">
+				<h3 class="title is-4">About</h3>
+				<ul>
+					<li><a href="/who-we-are">Who We Are</a></li>
+					<li><a href="/company/press">Press</a></li>
+					<li><a href="/company/leadership">Leadership</a></li>
+					<li><a href="/company/careers">Careers</a></li>
+					<li><a href="https://investors.thornehealthtech.com/?utm_source=Footer&amp;utm_medium=Website&amp;utm_campaign=Thorne">Investors</a></li>
+				</ul>
+			</div>
+			<div class="column is-half-mobile">
+				<h3 class="title is-4">Learn</h3>
+				<ul>
+					<li><a href="/take-5-daily">Take 5 Daily</a></li>
+					<li><a href="/quizzes">Quizzes</a></li>
+					<li><a href="/health-concerns">Health Concerns</a></li>
+					<li><a href="/ingredients">Ingredients</a></li>
+					<li><a href="/wellness-guides">Wellness Guides</a></li>
+					<li><a href="/build-your-practice">Professional Tools</a></li>
+				</ul>
+			</div>
+			<div class="column is-half-mobile">
+				<h3 class="title is-4">Community</h3>
+				<ul>
+					<li class="us-only"><a href="/ambassador">Thorne Ambassadors</a></li>
+					<li><a href="/find-a-health-professional">Find a Professional</a></li>
+					<li><a href="/sports-performance">Sports Performance</a></li>
+				</ul>
+			</div>
+			<div class="column is-half-mobile">
+				<h3 class="title is-4">Support</h3>
+				<ul>
+					<li><a href="/contacts">Contact Us</a></li>
+					<li><a href="/faqs">FAQs</a></li>
+					<li><a href="/faqs/returns-and-exchanges">Returns</a></li>
+					<li><a href="/rewards">Rewards</a></li>
+					<li><a href="/quick-order">Quick Order</a></li>
+					<li><a href="/account/subscriptions">Subscriptions</a></li>
+				</ul>
+			</div>
+			<div class="column is-12-mobile">
+				<h3 class="title is-4 has-text-centered-mobile">Need help</h3>
+				<!--<newsletter-subscription></newsletter-subscription>-->
+
+				<div class="phone has-text-centered-mobile">
+					<p>Visit Help Center</p>
+					<p><a href="mailto:info@thorne.com">info@thorne.com</a></p>
+					<p><a href="tel:18002281966">1 800 228 1966</a></p>
+				</div>
+				<div class="mobile-app has-text-centered-mobile">
+					<a href="https://itunes.apple.com/us/app/thorne-research/id1101310862">Download our iOS app</a>
+				</div>
+				<div class="social has-text-centered-mobile">
+					<a href="https://www.instagram.com/thornehealth" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/thornehealth" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/thornehealth" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.youtube.com/channel/UCaDgqa4VU8TECqIPq6C3LtA" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="terms has-text-centered">
+		&copy; Thorne. All rights reserved.
+		<a href="/terms-of-use">Terms</a>
+		<a href="/privacy-policy">Privacy</a>
+		<a href="/prop-65">Proposition 65</a>
+		<a href="/accessibility">Accessibility</a>
+		Thorne HealthTech
+	</div>
+
+	<div class="container">
+		<div class="dshea has-text-centered">
+			* These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
+		</div>
+	</div>
+
+</footer>
+
+
+	<script>
+        var pageLocale = "en_US";
+        var defaultCountry = "US";
+        var activeCountries = [{"isoCode":"AU","name":"Australia","locale":"en_AU"},{"isoCode":"BR","name":"Brazil","locale":"en_BR"},{"isoCode":"CA","name":"Canada","locale":"en_CA"},{"isoCode":"DO","name":"Dominican Republic","locale":"en_DO"},{"isoCode":"IN","name":"India","locale":"en_IN"},{"isoCode":"PH","name":"Philippines","locale":"en_PH"},{"isoCode":"SG","name":"Singapore","locale":"en_SG"},{"isoCode":"AE","name":"United Arab Emirates","locale":"en_AE"},{"isoCode":"GB","name":"United Kingdom","locale":"en_GB"},{"isoCode":"US","name":"United States","locale":"en_US"},{"isoCode":"VN","name":"Vietnam","locale":"en_VN"}];
+        var loggedIn = false;
+        var isProfessional = false;
+        var isAmbassador = false;
+        var isInternational = false;
+        const restrictions = {
+            isTestingEnabled: true,
+            isShippingFree: true,
+            isProfessionEnabled: true,
+            isAllowReferrals: true,
+            isAllowRewards: true
+        }
+        const country = {"isoCode":"US","name":"United States","locale":"en_US","defaultPricingUS":false,"professionEnabled":true,"regionRequired":true,"shippingEnabled":true,"testingEnabled":true,"unitedStates":true,"canada":false,"shippingOriginCountryCode":"US","distributorContact":null};
+        const user = null
+	</script>
+	<script src="//d1vo8zfysxy97v.cloudfront.net/js/vendor-7f59bd0d80373a2812aa080e5daae9e6.js"></script>
+	<script src="//d1vo8zfysxy97v.cloudfront.net/js/global-ea4761f90efc7418be9972a88a077d9f.js"></script>
+	<script src="//d1vo8zfysxy97v.cloudfront.net/js/layouts/layout-app-1f75c5f071407cd9db885dc23d610397.js"></script>
+	<script>
+        let covidIds = [];
+
+        let _notification = null;
+
+        function notification() {
+            const value = _notification;
+            _notification = null;
+            return value;
+        }
+
+        Vue.mixin({
+            methods: {
+                $cdn: function (url) {
+                    let result = url;
+                    if (url && !url.startsWith("http")) {
+                        const cdnBase = "https:\/\/d1vo8zfysxy97v.cloudfront.net";
+                        result = cdnBase + url.replace("cdn://", "/").replace("//", "/");
+                    }
+                    return result;
+                }
+            }
+        });
+	</script>
+	<content-blocks:scripts></content-blocks:scripts>
+
+	
+			<script src="//d1vo8zfysxy97v.cloudfront.net/js/pages/content/general-app-5af119de08a9ae92a809cbea6eb5ee5a.js"></script>
+			<script>var whoWeAreApp = new Vue({
+    el: "#pages-marketing-who-we-are-content",
+
+    data: {
+        approach: [
+            {
+                title: 'Clinical Research',
+                subtitle: 'How we know our supplements work',
+                href: 'https://www.thorne.com/company/clinical-research',
+                image: '/media/pages/who-we-are/clinical-research_va43b2c92e48cd9da392c2c76c9e96b45046462d0.jpg'
+            },
+            {
+                title: 'Health Tests',
+                subtitle: 'Everything you are(n\'t)',
+                href: 'https://www.thorne.com/at-home-tests',
+                image: '/media/pages/who-we-are/health-tests_vd89a6b014398b81de42d97df9ac94ab27271f0eb.jpg'
+            },
+            {
+                title: 'Sports Performance',
+                subtitle: 'Partner of 11 USA Teams and pro athletes',
+                href: 'https://www.thorne.com/sports-performance',
+                image: '/media/pages/who-we-are/sports-performance_v1e3bd96d25644418ad43066cf8f217bdd3d2c6cd.jpg'
+            },
+            {
+                title: 'Collaborations',
+                subtitle: 'World-class partners we work with',
+                href: 'https://www.thorne.com/company/strategic-collaborations',
+                image: '/media/pages/who-we-are/collaborations_v3c1f9b4d126ea469ee550ba121556dd467229293.png'
+            },
+            {
+                title: 'Press',
+                subtitle: 'See what others are saying about us',
+                href: 'https://www.thorne.com/company/press',
+                image: '/media/pages/who-we-are/press_v695b6aa84543b56c829e672eb9ca28bad5a6e0c7.jpg'
+            },
+            {
+                title: 'Leadership',
+                subtitle: 'Leading from the front',
+                href: 'https://www.thorne.com/company/leadership',
+                image: '/media/pages/who-we-are/leadership_v76d7cd922b4b39e8c6330b14acb7a895b19ac529.jpg'
+            }
+        ]
+    }
+});</script>
+		
+	
+
+
+</body>
+</html>
